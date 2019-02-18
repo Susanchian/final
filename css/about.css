@@ -1,0 +1,256 @@
+@charset "utf-8";
+@import url("rwd.css");
+/* CSS Document */
+
+*{
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+}
+
+html, body{
+	font-family:Verdana, Geneva, sans-serif, "微軟正黑體";
+}
+
+/* header */
+
+header{
+	padding:10px 0px;
+	color:#fff;
+	
+	text-align:center;
+	position:relative;
+}
+
+.menu{
+	display:block;
+	position:absolute;
+	width:30px;
+	height:30px;
+	background:url(../images/menu.png);
+	right:30px;
+	top:30px;
+}
+
+.menu:hover{
+	cursor:pointer;
+}
+
+/* nav */
+
+nav{
+	margin:auto;
+	
+	text-align:center;
+	display: none;
+	border-top:solid #f8f2f2 3px;
+}
+
+nav ul{
+	margin:0;
+}
+
+nav ul li{
+	display: block;
+	border-bottom:solid #c3c3b7 1px;
+}
+
+nav ul li a{
+	display:inline-block;
+	color:#8e2a0a;
+	letter-spacing:5px;
+	text-decoration:none;
+	width:100%;
+	padding:17px 45px;
+}
+
+nav ul li a:hover{
+	color:#F6A4A3;
+	background:#7B151E;
+}
+
+/*banner*/
+.banner{
+	display:block;
+	position:relative;
+	overflow:hidden;
+	width:100%;
+	min-width:620px;
+	height:200px;
+	background:url(../images/banner_information.jpg) no-repeat;
+	background-size:100%;
+}
+
+/*arrow*/
+.arrow,
+.arrow:before {
+  position: absolute;
+  left: 50%;
+  display: none;
+}
+
+.arrow {
+  width: 30px;
+  height: 30px;
+  top: 96%;
+  margin: -20px 0 0 -20px;
+  -webkit-transform: rotate(45deg);
+  border-left: none;
+  border-top: none;
+  border-right: 4px #8e2a0a solid;
+  border-bottom: 4px #8e2a0a solid;
+}
+
+.arrow:before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  margin: -10px 0 0 -10px;
+  border-left: none;
+  border-top: none;
+  border-right: 2px #8e2a0a solid;
+  border-bottom: 2px #8e2a0a solid;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-name: arrow;
+}
+@keyframes arrow {
+	0% {
+	  opacity: 1;
+	}
+	100% {
+	  opacity: 0;
+	  transform: translate(-10px, -10px);
+	}
+  }
+/*content*/
+main{
+	position:relative;
+	margin:60px auto 20px;
+	width:80%;
+	overflow:hidden;
+	/*background:url(../images/bg.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;*/
+}
+/* make swiper WRD */
+.swiper-container img {
+	width: 100%;
+	height: auto;
+}
+
+/*imgbox0*/
+#imgbox0{
+	width: 80%;
+	margin: 70px auto;
+}
+#imgbox0 img, .desbox{
+	float:left;
+	position: relative;
+}
+#imgbox0 img{
+	width:100%;
+}
+#imgbox0 .desbox{
+	line-height:2.1em;
+	padding:60px 20px;
+}
+.desbox p{
+	text-align:justify; /*文字等寬*/
+	font-size: 18px;
+
+}
+
+.desbox h1{
+	line-height:1.5em;
+	
+}
+
+h5{
+	color:#999;
+	border-bottom:solid #f8f2f2 3px;
+	line-height:2.6em;
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+}
+
+h4{
+	color:#999;
+	border-bottom:solid #fff 3px;
+	line-height:2.6em;
+	margin-bottom: 25px;
+	padding-bottom: 10px;
+}
+h2{
+	color: #8e2a0a;
+	margin-bottom: 15px;
+	font-size: 22px;
+}
+
+/*imgbox*/
+#imgbox{
+	width: 80%;
+	margin: 70px auto;
+	background: #f8f2f2;
+}
+#imgbox img, .desbox{
+	float:left;
+	position: relative;
+}
+#imgbox img{
+	width:100%;
+}
+#imgbox .desbox{
+	line-height:2.1em;
+	padding:60px 45px 20px;
+}
+
+
+/* footer */
+
+footer{
+	text-align:center;
+	padding:20px;
+	color:#8e2a0a;
+	background:#f8f2f2;
+
+}
+
+
+/*===================rwd details===========================*/
+
+/*For tablets*/
+@media only screen and (min-width:768px){
+	nav{
+		display:block;
+	}
+	
+	nav ul li{
+		display:inline-block;/*讓選單水平排列*/
+		border-bottom: solid #c3c3b7 0px;
+	}
+	
+	.menu{
+		display:none;
+	}/*漢堡選單，希望是視窗小到手機的時候才會出現*/
+
+
+	.banner{
+		height: 350px;
+	}
+
+	
+}
+
+
+/*For desktop*/
+@media only screen and (min-width:1200px){
+	.banner{
+		height: 500px;
+	}
+	.arrow, .arrow:before{
+		display:block;
+	}
+	
+}

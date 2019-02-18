@@ -1,0 +1,205 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content=" width=device-width, initial-scale=1.0">
+	<title>．節點</title>
+	
+	<!--css-->
+	<link href="css/about.css" rel="stylesheet" type="text/css">
+	<link href="css/swiper.css" rel="stylesheet" type="text/css">
+
+	<!-- Add jQuery library -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	
+	<!--js-->
+	<script type="text/javascript" src="js/swiper.js"></script>
+	<script type="text/javascript" src="js/hamburger.js"></script>
+	<script type="text/javascript" src="js/arrowscroll.js"></script>
+</head>
+
+<body>
+	
+	<!--header-->
+    <header>
+		<a href="index.html">
+			<img src="images/logo.jpg">
+		</a>
+        <div class="menu"><img src="images/menu_red.png"></div>
+    </header>
+    
+	<!--nav-->
+		<nav>
+			<ul>
+				<li><a href="index.html">展覽資訊</a></li>
+				<li><a href="works.html">作品介紹</a></li>	
+				<li><a href="marketing.html">行銷活動</a></li>
+				<li><a href="about.html">關於我們</a></li>
+			</ul>
+		</nav>
+	
+	<!--banner-->
+		<div class="banner"></div>
+	<!--arrow-->
+		<div class="arrow"></div>
+	<!--content-->
+		<main>
+			
+			  <!-- swiper 圖片-->
+			  <div class="swiper-container">
+				<div class="swiper-wrapper">
+				  <div class="swiper-slide"><img src="images/1920x1080.jpg"/></div>
+				  <div class="swiper-slide"><img src="images/1080x600.jpg"/></div>
+				  <div class="swiper-slide"><img src="images/1920x1080.jpg"/></div>
+				</div>
+				<!-- Add Pagination 下面圈圈-->
+				<div class="swiper-pagination"></div>
+				<!-- Add Arrows 箭頭-->
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+			  </div>
+			
+		</main>
+		
+	<!-- Initialize Swiper -->
+	
+		<script>
+			var swiper = new Swiper('.swiper-container', {
+			  speed: 1000,//切算速度
+			  spaceBetween: 10,
+			  centeredSlides: true,
+			  autoplay: {
+				delay: 2500,//停留時間
+				disableOnInteraction: false,
+			  },
+			  pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			  },
+			  navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			  },
+			});
+		</script>
+
+	<!--imgbox0-->
+		<div class="row" id="imgbox0">
+
+				<div class="col-m-6 col-5"> 
+					<img src="images/round2.png">
+				</div>
+					
+				<div class="col-m-6 col-7">
+					<div class="desbox">
+						<h1>關於交大傳播與科技學系</h1>
+						<h5>The Department of Communication and Technology (DCT)</h5>
+						<p>
+								交通大學「傳播與科技學系」致力於培養新時代的媒體創新者與領導者，
+								在推陳出新的數位洪流中，同時掌握學術與實務操作。本科系學生以「跨媒體」作為學習平台，
+								結合科技與多媒材，於大學四年間接觸廣播、新聞、電視、電影、行銷等媒材，呈現全方位的傳播實力。
+						</p>
+							</br>
+						<p>
+								在理論素養與實務技能並重的教學體系中，訓練學生掌握學術基礎概念與研究能力之餘，深化社會文化關懷、反思傳播媒體現象，並發展整合數位媒體創意。
+								經由全新想法打造的新型態媒體湧現，影響學生深入個人與社會的各個層面。
+						</p>
+					</div>
+				</div>
+		
+		</div>
+
+		<div class="row" id="imgbox0">
+
+				<div class="col-m-6 col-5"> 
+					<img src="images/round2_2.png">
+				</div>
+					
+				<div class="col-m-6 col-7">
+					<div class="desbox">
+						<h1>關於108級傳科畢業生</h1>
+						<h5></h5>
+						<p>
+								傳科系雖人數不多，卻聚集各式各樣的人才，畢業製作的媒材亦以多元媒材呈現，其中包含複合式媒材、電子書、
+								論文、整合行銷專案、數位遊戲創作及桌遊等等，展現本科系學生多元豐富的創意思考。	
+						</p>
+							</br>
+						<p>
+								本屆畢業展以「節點」為主軸，象徵傳科系這群應屆畢業
+								生走到人生的節點上，它是個中繼站，也是個聚集點，容這42名學生帶著勇氣、思索過去與未來，並於大學生涯中
+								最後一次合作、完成一項完整作品。		
+						</p>
+					</div>
+				</div>
+		
+		</div>
+
+	<!--imgbox-->
+		<div class="row" id="imgbox">
+					
+				<div class="col-m-6 col-7">
+					<div class="desbox">
+						<h1>關於108級畢籌團隊</h1>
+						<h4></h4>
+						<h2>林明慧、黃珮瑄、洪儷娟、簡梵軒、楊佩臻、王毓凱</h2>
+						<p>
+							本團隊以專案行銷之模式，藉策展、設計、宣傳、活動扣緊主題，期能以縝密的企劃打造質量兼備的展覽機制，並協助整合各組作品，讓同學們得以完整呈現努力的成果，
+							同時踏出新竹，竭力於擴展北部地區知名度。	
+						</p>
+						
+					</div>
+				</div>
+		
+				<div class="col-m-6 col-5"> 
+					<img src="images/round2_3.png">
+				</div>
+
+		</div>
+
+	<!--footer-->
+		<footer>
+			&copy; 交大傳播與科技學系 108級畢籌團隊
+		</footer>
+
+
+	<!-- 回到頂端按鈕 start -->
+	<script>
+		//<![CDATA[
+		(function () {
+		$("body").append("<img id='goTopButton' style='display: none; z-index: 5; cursor: pointer;' title='回到頂端'/>");
+		var img = "images/top_btn.png",
+		locatioin = 9/10, // 按鈕出現在螢幕的高度
+		right = 10, // 距離右邊 px 值
+		opacity = 0.3, // 透明度
+		speed = 500, // 捲動速度
+		$button = $("#goTopButton"),
+		$body = $(document),
+		$win = $(window);
+		$button.attr("src", img);
+		$button.on({
+		mouseover: function() {$button.css("opacity", 1);},
+		mouseout: function() {$button.css("opacity", opacity);},
+		click: function() {$("html, body").animate({scrollTop: 0}, speed);}
+		});
+		window.goTopMove = function () {
+		var scrollH = $body.scrollTop(),
+		winH = $win.height(),
+		css = {"top": winH * locatioin + "px", "position": "fixed", "right": right, "opacity": opacity};
+		if(scrollH > 20) {
+		$button.css(css);
+		$button.fadeIn("slow");
+		} else {
+		$button.fadeOut("slow");
+		}
+		};
+		$win.on({
+		scroll: function() {goTopMove();},
+		resize: function() {goTopMove();}
+		});
+		} )();
+		//]]>
+		</script>
+		<!-- 回到頂端按鈕 end, Design by WFU BLOG -->
+
+</body>
+</html>

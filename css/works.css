@@ -1,0 +1,356 @@
+@charset "utf-8";
+@import url("rwd.css");
+/* CSS Document */
+
+*{
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+}
+
+html, body{
+	font-family:Verdana, Geneva, sans-serif, "微軟正黑體";
+}
+
+/* header */
+
+header{
+	padding:10px 0px;
+	color:#fff;
+	
+	text-align:center;
+	position:relative;
+}
+
+.menu{
+	display:block;
+	position:absolute;
+	width:30px;
+	height:30px;
+	background:url(../images/menu.png);
+	right:30px;
+	top:30px;
+}
+
+.menu:hover{
+	cursor:pointer;
+}
+
+/* nav */
+
+nav{
+	margin:auto;
+	
+	text-align:center;
+	display: none;
+	border-top:solid #f8f2f2 3px;
+}
+
+nav ul{
+	margin:0;
+}
+
+nav ul li{
+	display: block;
+	border-bottom:solid #c3c3b7 1px;
+}
+
+nav ul li a{
+	display:inline-block;
+	color:#8e2a0a;
+	letter-spacing:5px;
+	text-decoration:none;
+	width:100%;
+	padding:17px 45px;
+}
+
+nav ul li a:hover{
+	color:#F6A4A3;
+	background:#7B151E;
+}
+
+/*banner*/
+.banner{
+	display:block;
+	position:relative;
+	overflow:hidden;
+	width:100%;
+	min-width:620px;
+	height:200px;
+	background:url(../images/banner_works.jpg) no-repeat;
+	background-size:100%;
+	margin-bottom:60px;
+}
+
+/*arrow*/
+.arrow,
+.arrow:before {
+  position: absolute;
+  left: 50%;
+  display: none;
+}
+
+.arrow {
+  width: 30px;
+  height: 30px;
+  top: 96%;
+  margin: -20px 0 0 -20px;
+  -webkit-transform: rotate(45deg);
+  border-left: none;
+  border-top: none;
+  border-right: 4px #8e2a0a solid;
+  border-bottom: 4px #8e2a0a solid;
+}
+
+.arrow:before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  margin: -10px 0 0 -10px;
+  border-left: none;
+  border-top: none;
+  border-right: 2px #8e2a0a solid;
+  border-bottom: 2px #8e2a0a solid;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-name: arrow;
+}
+@keyframes arrow {
+	0% {
+	  opacity: 1;
+	}
+	100% {
+	  opacity: 0;
+	  transform: translate(-10px, -10px);
+	}
+  }
+
+/* section */
+section{
+	width: 80%; /*可隨視窗大小調整*/
+	margin: 50px auto; /*物件置中*/
+	text-align: center;
+}
+
+
+/* article */
+
+article{
+	display: inline-block;
+  	 /*設定寬度，否則會以內容元素中最寬的元素寬度作為預設*/
+	width: 250px;
+	height: 280px;
+ 	/*設定邊寬作為檢視*/
+	margin:20px;
+	text-align: center;
+	border-radius: 8%;
+
+	-ms-transform:scale(1,1);
+	-webkit-transform:scale(1,1);
+	transform:scale(1,1);
+	
+	transition:transform 1s;
+	-webkit-transition:transform 1s;
+	
+	transition-timimg-function:ease-in-out;
+	-webkit-transition-timimg-function:ease-in-out;
+}
+
+article:hover{
+	color: #8e2a0a;
+	cursor: pointer; /*設定滑鼠游標*/
+	-ms-transform:scale(1.07,1.07);
+	-webkit-transform:scale(1.07,1.07);
+	transform:scale(1.07,1.07);
+	box-shadow:3px 3px 8px #8e2a0a;
+}
+
+article:active{
+	background: #8e2a0a;
+	color: #fff;
+}
+
+.article_a{
+	color:#000;
+	font-weight: bold;
+	text-decoration:none;
+	display: inline-block;
+}
+
+article img{
+	width: 230px;
+	weight: 230px;
+	margin: 5px auto;
+}
+
+
+/*content*/
+.row{
+	width: 100%;
+	padding:60px 0px;
+	margin:auto;
+}
+.row img{
+	width:100%;
+}
+
+.desbox{
+    letter-spacing: 3px;
+	line-height:30px;
+	box-sizing:border-box;
+	width: 90%;
+	margin: auto;
+	/*background:#fff;*/
+	/*font-weight:bold;*/
+	/*border:solid #f2f0f1淺灰 2px;*/
+	/*e5e5e5深灰*/
+}
+.desbox p{
+	text-align:justify; /*文字等寬*/
+	box-sizing:border-box;
+	padding:15px 40px;
+	font-size: 18px;
+}
+
+.desbox h2{
+	color:#8e2a0a;
+}
+.desbox h1{
+	color:#8e2a0a;
+	padding: 15px 5px;
+	border-bottom: solid #8e2a0a 1.5px;
+	margin-bottom: 20px;
+}
+.desbox > h2::before{
+	content: url(../images/round2_marketing_2.png);
+}
+.linkbox{
+	padding:20px 40px 0px;
+}
+.desbox h3{
+	display: inline-block;
+	text-decoration: none;
+	color: #8e2a0a;
+}
+h3::before{
+	content: url(../images/round2_marketing_3.png);
+}
+.desbox h4{
+	color:#8e2a0a;
+	line-height:1.5em;
+	padding:5px;
+	width:130px;
+	text-align: center;
+	border:solid 1px #8e2a0a;
+	margin:auto;
+}
+
+h4:hover{
+	cursor:pointer;
+	background:#8e2a0a;
+	color:#fff;
+}
+
+.desbox_team{
+	box-sizing:border-box;
+	width: 80%;
+	margin: auto;	
+}
+.desbox_team > h1{
+	color: #000;
+	margin: 15px 0px;
+}
+.desbox_team > h2{
+	color: #8e2a0a;
+	margin-bottom: 15px;
+}
+.desbox_team > p{
+	text-align:justify; /*文字等寬*/
+	font-size: 18px;
+	letter-spacing: 3px;
+	line-height:30px;
+}
+
+h4:hover{
+	cursor:pointer;
+	background:#8e2a0a;
+	color:#fff;
+}
+
+#works{
+	text-align:center;
+	color:#8e2a0a;
+	letter-spacing:5px;
+	margin:auto;
+	width:150px;
+	height:50px;
+	border-bottom:solid #f8f2f2 3px;
+	font-weight:bold;
+}
+
+.gray {
+	background:#f8f2f2;
+	padding-bottom: 80px;
+}
+.white {
+	background: #fff;
+	padding-bottom: 80px;
+}
+
+.work > .row {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.work .team-intro {
+	border: 1px #8e2a0a solid;
+	padding: 15px 20px;
+}
+
+
+
+/* footer */
+
+footer{
+	text-align:center;
+	padding:20px;
+	color:#8e2a0a;
+	background:#f8f2f2;
+
+}
+
+
+/*===================rwd details===========================*/
+
+/*For tablets*/
+@media only screen and (min-width:768px){
+	nav{
+		display:block;
+	}
+	
+	nav ul li{
+		display:inline-block;/*讓選單水平排列*/
+		border-bottom: solid #c3c3b7 0px;
+	}
+	
+	.menu{
+		display:none;
+	}/*漢堡選單，希望是視窗小到手機的時候才會出現*/
+
+	.banner{
+		height: 350px;
+	}
+	
+}
+
+
+/*For desktop*/
+@media only screen and (min-width:1200px){
+	.banner{
+		height: 500px;
+	}
+	.arrow, .arrow:before{
+		display:block;
+	}
+}
