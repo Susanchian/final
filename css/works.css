@@ -75,9 +75,8 @@ nav ul li a:hover{
 	position:relative;
 	overflow:hidden;
 	width:100%;
-	min-width:620px;
 	height:200px;
-	background:url(../images/banner_works.jpg) no-repeat;
+	background:url(../images/banner_works_mobile.jpg) no-repeat;
 	background-size:100%;
 	margin-bottom:60px;
 }
@@ -139,10 +138,10 @@ section{
 article{
 	display: inline-block;
   	 /*設定寬度，否則會以內容元素中最寬的元素寬度作為預設*/
-	width: 250px;
-	height: 280px;
+	width: 260px;
+	height: 290px;
  	/*設定邊寬作為檢視*/
-	margin:20px;
+	margin:10px;
 	text-align: center;
 	border-radius: 8%;
 
@@ -196,7 +195,7 @@ article img{
 }
 
 .desbox{
-    letter-spacing: 3px;
+  letter-spacing: 3px;
 	line-height:30px;
 	box-sizing:border-box;
 	width: 90%;
@@ -221,6 +220,19 @@ article img{
 	padding: 15px 5px;
 	border-bottom: solid #8e2a0a 1.5px;
 	margin-bottom: 20px;
+	line-height: 45px;
+}
+.sayh1{
+	font-size: 32px;
+	font-weight: bold;
+	color:#8e2a0a;
+	padding: 15px 5px;
+	border-bottom: solid #8e2a0a 1.5px;
+	margin-bottom: 20px;
+	line-height: 45px;
+}
+.sayh1::after{
+	content: url(../images/underline.png);
 }
 .desbox > h2::before{
 	content: url(../images/round2_marketing_2.png);
@@ -339,7 +351,8 @@ footer{
 	}/*漢堡選單，希望是視窗小到手機的時候才會出現*/
 
 	.banner{
-		height: 350px;
+		height: 500px;
+		background: url(../images/banner_works.jpg) no-repeat;
 	}
 	
 }
@@ -348,7 +361,9 @@ footer{
 /*For desktop*/
 @media only screen and (min-width:1200px){
 	.banner{
-		height: 500px;
+		width: 100%;
+		background:url(../images/banner_works.jpg) no-repeat;
+		background-size: 100% auto;
 	}
 	.arrow, .arrow:before{
 		display:block;

@@ -73,9 +73,8 @@ nav ul li a:hover{
 	position:relative;
 	overflow:hidden;
 	width:100%;
-	min-width:620px;
 	height:210px;
-	background:url(../images/banner_marketing.jpg) no-repeat;
+	background:url(../images/banner_marketing_mobile.jpg) no-repeat;
 	background-size:100%;
 	
 }
@@ -168,6 +167,7 @@ h1{
 	/*font-weight:bold;*/
 }
 
+
 /*arrow*/
 .arrow,
 .arrow:before {
@@ -220,9 +220,29 @@ footer{
 	padding:20px;
 	color:#8e2a0a;
 	background:#f8f2f2;
-
 }
-
+.footerbox{
+	margin: 0 auto 20px;
+}
+.footerinfo{
+	text-align:left;
+	width:290px;
+	line-height: 1.5em;
+}
+article{
+	display: inline-block;
+	width: 100px;
+	height: 50px;
+	margin: 5px;
+}
+article img{
+	width: 100px;
+	weight: 50px;
+	margin: 5px auto;
+}
+h4{
+	text-align: left
+}
 
 /*===================rwd details===========================*/
 
@@ -245,7 +265,8 @@ footer{
 		width: 80%;
 	}
 	.banner{
-		height: 350px;
+		height: 500px;
+		background: url(../images/banner_marketing.jpg) no-repeat;
 	}
 	
 }
@@ -257,7 +278,9 @@ footer{
 		width: 50%;
 	}
 	.banner{
-		height: 500px;
+		width: 100%;
+		background:url(../images/banner_marketing.jpg) no-repeat;
+		background-size: 100% auto;
 	}
 	h1{
 		text-align: left;

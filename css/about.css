@@ -17,10 +17,10 @@ html, body{
 header{
 	padding:10px 0px;
 	color:#fff;
-	
 	text-align:center;
 	position:relative;
 }
+
 
 .menu{
 	display:block;
@@ -75,9 +75,8 @@ nav ul li a:hover{
 	position:relative;
 	overflow:hidden;
 	width:100%;
-	min-width:620px;
 	height:200px;
-	background:url(../images/banner_information.jpg) no-repeat;
+	background:url(../images/banner_about_mobile.jpg) no-repeat;
 	background-size:100%;
 }
 
@@ -148,6 +147,7 @@ main{
 #imgbox0 img, .desbox{
 	float:left;
 	position: relative;
+	text-align: left;
 }
 #imgbox0 img{
 	width:100%;
@@ -159,12 +159,13 @@ main{
 .desbox p{
 	text-align:justify; /*文字等寬*/
 	font-size: 18px;
-
 }
 
-.desbox h1{
-	line-height:1.5em;
-	
+.desbox{
+	padding-top: 15px;
+}
+h1{
+	line-height:1.5em;	
 }
 
 h5{
@@ -179,12 +180,12 @@ h4{
 	color:#999;
 	border-bottom:solid #fff 3px;
 	line-height:2.6em;
-	margin-bottom: 25px;
+	margin-bottom: 30px;
 	padding-bottom: 10px;
 }
 h2{
 	color: #8e2a0a;
-	margin-bottom: 15px;
+	margin-bottom: 5px;
 	font-size: 22px;
 }
 
@@ -206,6 +207,49 @@ h2{
 	padding:60px 45px 20px;
 }
 
+.row {
+	width: 100%;
+	margin: 0px auto;
+}
+.row img{
+	width: 100%;
+}
+.team-intro {
+	background: #f8f2f2;
+	padding:50px 30px;
+	width: 85%;
+	margin: 0px auto 100px;
+	text-align: center;
+}
+.team-intro .desbox{
+	line-height:2.1em;
+}
+
+.teaminfo{
+	display: inline-block;
+  	 /*設定寬度，否則會以內容元素中最寬的元素寬度作為預設*/
+	width: 250px;
+	height: 400px;
+ 	/*設定邊寬作為檢視*/
+	text-align: center;
+	border: solid #fff 2px;
+}
+.teambox{
+	color:#000;
+	display: inline-block;
+	margin: 25px 55px 5px;
+}
+.teambox p{
+	text-align: left;
+	width: 200px;
+	margin: auto;
+}
+.teaminfo img{
+	width: 200px;
+	weight: 200px;
+	margin: 15px auto 5px;
+}
+
 
 /* footer */
 
@@ -214,7 +258,29 @@ footer{
 	padding:20px;
 	color:#8e2a0a;
 	background:#f8f2f2;
-
+}
+.footerbox{
+	margin: 0 auto 20px;
+}
+.footerinfo{
+	text-align:left;
+	width:290px;
+	line-height: 1.5em;
+}
+article{
+	display: inline-block;
+	width: 100px;
+	height: 50px;
+	margin: 5px;
+}
+article img{
+	width: 100px;
+	weight: 50px;
+	margin: 5px auto;
+}
+h6{
+	text-align: left;
+	font-size: 16px;
 }
 
 
@@ -234,12 +300,11 @@ footer{
 	.menu{
 		display:none;
 	}/*漢堡選單，希望是視窗小到手機的時候才會出現*/
-
-
+	
 	.banner{
-		height: 350px;
+		height: 500px;
+		background: url(../images/banner_about.jpg) no-repeat;
 	}
-
 	
 }
 
@@ -247,7 +312,9 @@ footer{
 /*For desktop*/
 @media only screen and (min-width:1200px){
 	.banner{
-		height: 500px;
+		width: 100%;
+		background:url(../images/banner_about.jpg) no-repeat;
+		background-size: 100% auto;
 	}
 	.arrow, .arrow:before{
 		display:block;
