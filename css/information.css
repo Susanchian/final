@@ -153,7 +153,7 @@ nav ul li a:hover{
 	box-sizing:border-box;
 	padding:100px 0px;
 	/*background:#8e2a0a;*/
-	color:#fff;
+	color:#e7ddd3;
 	margin: auto;
 	letter-spacing: 3px;
 }
@@ -183,12 +183,13 @@ h2::before{
 }
 h2{
 	display: inline-block;
-	font-size: 22px;
+	font-size: 20px;
+	color: #000;
 }
 .desbox > p{
 	display: inline-block;
-	margin-bottom: 30px;
-	font-size: 20px;
+	margin-bottom: 20px;
+	font-size: 18px;
 	color: #000;
 }
 
@@ -216,25 +217,24 @@ h2{
 
 #imgbox0{
 	font-size: 20px;
-    line-height: 30px;
-    letter-spacing: 3px;
+  line-height: 30px;
+  letter-spacing: 3px;
 	width: 90%;
 	margin: 30px auto;
 	border-bottom:solid #f8f2f2 2px;
 }
 
 .title{
-	text-align:center;
+	text-align:left;
 	color:#8e2a0a;
-	letter-spacing:5px;
+	letter-spacing:2px;
 	font-size:30px;
-	margin:auto;
-	width:200px;
-	height:50px;
+	line-height:1.5em;
+	margin:5px auto 10px;
 	font-weight:bold;
 }
 .dot{
-	color: #fff;
+	color: #e7ddd3;
 	margin: 30px 0px 40px;
 	font-size: 48px;
 	text-align: center;
@@ -244,6 +244,30 @@ h2{
 	height: 280px;
 	line-height: 280px;
 	display: inline-block;
+}
+.desbox0 p{
+	
+	font-size: 18px;
+}
+.desbox0{
+	line-height:2.1em;
+	box-sizing:border-box;
+	text-align:justify; /*文字等寬*/
+}
+h3::before{
+	content: url(../images/round2_marketing_2.png);
+}
+h3{
+	font-size: 20px;
+}
+h5{
+	font-size: 18px;
+	color: #8e2a0a;
+
+}
+small{
+	border:#000 solid 1px;
+	padding:3px;
 }
 
 /*video*/

@@ -162,7 +162,7 @@ main{
 }
 
 .desbox{
-	padding-top: 15px;
+	padding-top: 10px;
 }
 h1{
 	line-height:1.5em;	
@@ -237,7 +237,7 @@ h2{
 .teambox{
 	color:#000;
 	display: inline-block;
-	margin: 4em auto 1em;
+	margin: 1em auto;
 }
 .teambox p{
 	text-align: left;
@@ -306,6 +306,9 @@ h6{
 		background: url(../images/banner_about.jpg) no-repeat;
 	}
 	
+	.teambox{
+		margin: 1em auto;
+	}
 }
 
 
@@ -318,6 +321,9 @@ h6{
 	}
 	.arrow, .arrow:before{
 		display:block;
+	}
+	.teambox{
+		margin: 30px 55px 5px;
 	}
 	
 }
