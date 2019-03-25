@@ -4,6 +4,9 @@ $(function(){
 		$('html,body').animate({scrollTop:$('#btn_ocean').offset().top}, 800); 
 	}); //代表一個完整的執行區塊
 	
+	$('.arrow').click(function(){ 
+		$('html,body').animate({scrollTop:$('#works').offset().top}, 800); 
+	});
 	
 	$('#ocean_btn').click(function(){ 
 		$('html,body').animate({scrollTop:$('#ocean').offset().top}, 800); 
