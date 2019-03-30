@@ -235,6 +235,7 @@ h2{
  	/*設定邊寬作為檢視*/
 	text-align: center;
 	border: solid #fff 2px;
+	vertical-align: bottom;
 }
 .teambox{
 	color:#000;
