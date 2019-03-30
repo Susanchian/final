@@ -20,9 +20,13 @@
 	width: 100%;
 }
 
+@media (min-width: 768px) {
+    .col-s-12 {width: 100%;}
+}
+
 /* For tablets */
 /*寬度介於768~1200時，加m*/
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
 .col-m-1 {width: 8.33%;}
 .col-m-2 {width: 16.66%;}
 .col-m-3 {width: 25%;}
