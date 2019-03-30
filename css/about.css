@@ -164,7 +164,7 @@ main{
 }
 
 .desbox{
-	padding-top: 10px;
+	padding-top: 5px;
 }
 h1{
 	line-height:1.5em;	
@@ -182,8 +182,8 @@ h4{
 	color:#999;
 	border-bottom:solid #fff 3px;
 	line-height:2.6em;
-	margin-bottom: 30px;
-	padding-bottom: 10px;
+	margin-bottom: 5px;
+	padding-bottom: 5px;
 }
 h2{
 	color: #8e2a0a;
