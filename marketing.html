@@ -6,19 +6,16 @@
 	<title>節點│交大傳科系第十二屆畢業成果展</title>
 	<link href="css/marketing.css" rel="stylesheet" type="text/css">
 	
-	
-
 	<!-- Add jQuery library -->
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<!-- Add fancyBox -->
-		<link rel="stylesheet" href="js/fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
-		<script type="text/javascript" src="js/fancybox/source/jquery.fancybox.pack.js"></script>
-		<script type="text/javascript" src="js/fancybox/source/jquery.fancybox.js"></script>
+	<link rel="stylesheet" href="js/fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
+	<script type="text/javascript" src="js/fancybox/source/jquery.fancybox.pack.js"></script>
+	<script type="text/javascript" src="js/fancybox/source/jquery.fancybox.js"></script>
 
 	<!--thumbs-->
-		<link rel="stylesheet" href="js/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
-		<script type="text/javascript" src="js/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+	<link rel="stylesheet" href="js/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+	<script type="text/javascript" src="js/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
 
 </head>
 
@@ -94,7 +91,7 @@
 			
 			
 			<div class="col-m-6 col-7"> 
-				<a class="fancybox" rel="gallery1" href="images/dessertjpg"><img src="images/dessert.jpg"></a>             
+				<a class="fancybox" rel="gallery1" href="images/dessert.jpg"><img src="images/dessert.jpg"></a>             
 				<a class="fancybox" rel="gallery1" href="images/dessert2.jpg" tilte="JOY"><img src="images/dessert2.jpg"></a>
 				<!--<a class="fancybox" rel="gallery1" href="images/7x5.jpg" tilte="JOY"><img src="images/7x5.jpg"></a>
 				--<a class="fancybox" rel="gallery1" href="images/red2.jpg" tilte="JOY"></a>
@@ -103,7 +100,6 @@
 			</div>
 			
 		</div>
-	
 	
 		<div class="row" id="imgbox0">
 			<h1>校外實體活動｜台北各大學快閃</h1>
@@ -221,45 +217,51 @@
 
 	<!-- 回到頂端按鈕 start -->
 	<script>
-		//<![CDATA[
 		(function () {
-		$("body").append("<img id='goTopButton' style='display: none; z-index: 5; cursor: pointer;' title='回到頂端'/>");
-		var img = "images/top_btn.png",
-		locatioin = 9/10, // 按鈕出現在螢幕的高度
-		right = 10, // 距離右邊 px 值
-		opacity = 0.3, // 透明度
-		speed = 500, // 捲動速度
-		$button = $("#goTopButton"),
-		$body = $(document),
-		$win = $(window);
-		$button.attr("src", img);
-		$button.on({
-		mouseover: function() {$button.css("opacity", 1);},
-		mouseout: function() {$button.css("opacity", opacity);},
-		click: function() {$("html, body").animate({scrollTop: 0}, speed);}
-		});
-		window.goTopMove = function () {
-		var scrollH = $body.scrollTop(),
-		winH = $win.height(),
-		css = {"top": winH * locatioin + "px", "position": "fixed", "right": right, "opacity": opacity};
-		if(scrollH > 20) {
-		$button.css(css);
-		$button.fadeIn("slow");
-		} else {
-		$button.fadeOut("slow");
-		}
-		};
-		$win.on({
-		scroll: function() {goTopMove();},
-		resize: function() {goTopMove();}
-		});
+			$("body").append("<img id='goTopButton' style='display: none; z-index: 5; cursor: pointer;' title='回到頂端'/>");
+			var img = "images/top_btn.png",
+			locatioin = 9/10, // 按鈕出現在螢幕的高度
+			right = 10, // 距離右邊 px 值
+			opacity = 0.3, // 透明度
+			speed = 500, // 捲動速度
+			$button = $("#goTopButton"),
+			$body = $(document),
+			$win = $(window);
+			$button.attr("src", img);
+			$button.on({
+				mouseover: function() {$button.css("opacity", 1);},
+				mouseout: function() {$button.css("opacity", opacity);},
+				click: function() {$("html, body").animate({scrollTop: 0}, speed);}
+			});
+			window.goTopMove = function () {
+				var scrollH = $body.scrollTop(),
+				winH = $win.height(),
+				css = {"top": winH * locatioin + "px", "position": "fixed", "right": right, "opacity": opacity};
+				if(scrollH > 20) {
+					$button.css(css);
+					$button.fadeIn("slow");
+				} else {
+					$button.fadeOut("slow");
+				}
+			};
+			$win.on({
+				scroll: function() {goTopMove();},
+				resize: function() {goTopMove();}
+			});
+			// init Fancybox
+			$("a.fancybox").fancybox({
+				'transitionIn'	:	'elastic',
+				'transitionOut'	:	'elastic',
+				'speedIn'		:	600, 
+				'speedOut'		:	200, 
+				'overlayShow'	:	false
+			});
 		} )();
-		//]]>
 		</script>
 		<!-- 回到頂端按鈕 end, Design by WFU BLOG -->
 
 <!--js-->
-<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
 <script type="text/javascript" src="js/e0.js"></script>
 <script type="text/javascript" src="js/arrowscroll.js"></script>
 <script type="text/javascript" src="js/click_marketing.js"></script>
