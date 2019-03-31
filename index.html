@@ -85,7 +85,7 @@
 			<div class="defbox">
 				<div class="dot">節點</div>
 
-				<p>連結交大傳科與未來道路的中繼站，聚集了41段青春，</br>也將發散成41段故事。
+				<p>連結交大傳科與未來道路的中繼站，聚集了41段青春，<br>也將發散成41段故事。
 				</p>
 			</div>
 		</div>
@@ -229,7 +229,6 @@
 
 	<!-- 回到頂端按鈕 start -->
 	<script>
-		//<![CDATA[
 		(function () {
 			$("body").append("<img id='goTopButton' style='display: none; z-index: 5; cursor: pointer;' title='回到頂端'/>");
 			var img = "images/top_btn.png",
@@ -242,27 +241,26 @@
 			$win = $(window);
 			$button.attr("src", img);
 			$button.on({
-			mouseover: function() {$button.css("opacity", 1);},
-			mouseout: function() {$button.css("opacity", opacity);},
-			click: function() {$("html, body").animate({scrollTop: 0}, speed);}
+				mouseover: function() {$button.css("opacity", 1);},
+				mouseout: function() {$button.css("opacity", opacity);},
+				click: function() {$("html, body").animate({scrollTop: 0}, speed);}
 			});
 			window.goTopMove = function () {
-			var scrollH = $body.scrollTop(),
-			winH = $win.height(),
-			css = {"top": winH * locatioin + "px", "position": "fixed", "right": right, "opacity": opacity};
-			if(scrollH > 20) {
-			$button.css(css);
-			$button.fadeIn("slow");
-			} else {
-			$button.fadeOut("slow");
-			}
+				var scrollH = $body.scrollTop(),
+				winH = $win.height(),
+				css = {"top": winH * locatioin + "px", "position": "fixed", "right": right, "opacity": opacity};
+				if(scrollH > 20) {
+					$button.css(css);
+					$button.fadeIn("slow");
+				} else {
+					$button.fadeOut("slow");
+				}
 			};
 			$win.on({
-			scroll: function() {goTopMove();},
-			resize: function() {goTopMove();}
+				scroll: function() {goTopMove();},
+				resize: function() {goTopMove();}
 			});
 		} )();
-		//]]>
 		</script>
 		<!-- 回到頂端按鈕 end, Design by WFU BLOG -->
 
